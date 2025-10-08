@@ -1,7 +1,7 @@
-import 'package:ashwik_dev/ui/retry/custom/src/timeline_decoration.dart';
-import 'package:ashwik_dev/ui/retry/custom/src/types/marker.dart';
-import 'package:ashwik_dev/ui/retry/custom/src/types/timeline_position.dart';
-import 'package:ashwik_dev/ui/retry/custom/src/types/timeline_properties.dart';
+import 'package:ashwik_dev/ui/home/custom/src/timeline_decoration.dart';
+import 'package:ashwik_dev/ui/home/custom/src/types/marker.dart';
+import 'package:ashwik_dev/ui/home/custom/src/types/timeline_position.dart';
+import 'package:ashwik_dev/ui/home/custom/src/types/timeline_properties.dart';
 import 'package:flutter/material.dart';
 
 class MarkerWidget extends StatelessWidget {

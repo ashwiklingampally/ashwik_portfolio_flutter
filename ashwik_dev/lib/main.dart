@@ -1,6 +1,6 @@
 import 'package:ashwik_dev/theme/bloc/theme_cubit.dart';
-import 'package:ashwik_dev/ui/home/home_page.dart';
-import 'package:ashwik_dev/ui/retry/homepage_normal.dart';
+import 'package:ashwik_dev/theme/theme.dart';
+import 'package:ashwik_dev/ui/home/homepage_normal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
         builder: (context, state) => const HomePageNormal(),
         routes: [
           GoRoute(path: 'home', builder: (context, state) => const HomePageNormal()),
-          GoRoute(path: 'old', builder: (context, state) => const HomePage()),
         ],
       ),
     ],
@@ -46,8 +45,9 @@ class MyApp extends StatelessWidget {
               return MaterialApp.router(
                 title: 'Ashwik',
                 debugShowCheckedModeBanner: false,
-                theme:ThemeData(useMaterial3: true),
-                darkTheme: ThemeData.dark(useMaterial3: true),
+                theme: lightThemeData, // Default theme
+                darkTheme: darkThemeData, // Dark theme definition
+                themeMode: ThemeMode.light,
                 routerConfig: router,
               );
             },

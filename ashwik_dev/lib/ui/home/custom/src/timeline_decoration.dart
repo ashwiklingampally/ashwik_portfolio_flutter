@@ -1,5 +1,5 @@
-import 'package:ashwik_dev/ui/retry/custom/src/types/timeline_position.dart';
-import 'package:ashwik_dev/ui/retry/custom/src/types/timeline_properties.dart';
+import 'package:ashwik_dev/ui/home/custom/src/types/timeline_position.dart';
+import 'package:ashwik_dev/ui/home/custom/src/types/timeline_properties.dart';
 import 'package:flutter/material.dart';
 
 import 'types/timeline_icon_alignment.dart';

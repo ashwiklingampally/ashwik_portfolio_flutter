@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PartFour extends StatelessWidget {
   const PartFour({super.key});
@@ -16,20 +17,11 @@ class PartFour extends StatelessWidget {
           child: RichText(
             text: TextSpan(
               text: 'Soc'.toUpperCase(),
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30.sp,
-                fontFamily: GoogleFonts.dmSerifText().fontFamily,
-              ),
+              style: Theme.of(context).textTheme.headlineSmall,
               children: [
                 TextSpan(
                   text: 'ial'.toUpperCase(),
-                  style: TextStyle(
-                    color: Colors.tealAccent,
-                    fontSize: 30.sp,
-                    fontFamily: GoogleFonts.dmSerifText().fontFamily,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],
             ),
@@ -40,35 +32,46 @@ class PartFour extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.whatsapp, color: Colors.white),
+              icon: FaIcon(FontAwesomeIcons.whatsapp),
             ),
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.instagram, color: Colors.white),
+              icon: FaIcon(FontAwesomeIcons.instagram),
             ),
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.google, color: Colors.white),
+              icon: FaIcon(FontAwesomeIcons.google),
             ),
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.phone, color: Colors.white),
+              icon: FaIcon(FontAwesomeIcons.phone),
             ),
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.facebook, color: Colors.white),
+              icon: FaIcon(FontAwesomeIcons.facebook),
+            ),
+            IconButton(
+              onPressed:(){} ,
+              icon: FaIcon(FontAwesomeIcons.twitter),
             ),
             IconButton(
               onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.twitter, color: Colors.white),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: FaIcon(FontAwesomeIcons.github, color: Colors.white),
+              icon: FaIcon(FontAwesomeIcons.github),
             ),
           ],
         ),
       ],
     );
+  }
+
+
+
+  Future<void> _launchInBrowser(Uri url) async {
+    if (!await launchUrl(
+      url,
+      mode: LaunchMode.externalApplication,
+    )) {
+      throw Exception('Could not launch $url');
+    }
   }
 }

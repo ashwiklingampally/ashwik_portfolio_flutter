@@ -49,6 +49,7 @@ dependencies:
   flutter_highlighting: ^0.9.0+11.8.0
   timelines_plus: ^1.0.7
   timeline_list: ^0.1.1
+  url_launcher: ^6.3.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

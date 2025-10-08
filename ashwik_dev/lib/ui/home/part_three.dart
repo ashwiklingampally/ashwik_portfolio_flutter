@@ -15,20 +15,12 @@ class PartThree extends StatelessWidget {
           child: RichText(
             text: TextSpan(
               text: 'Contact\t'.toUpperCase(),
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30.sp,
-                fontFamily: GoogleFonts.dmSerifText().fontFamily,
-              ),
+              style: Theme.of(context).textTheme.headlineSmall,
+
               children: [
                 TextSpan(
                   text: 'Me'.toUpperCase(),
-                  style: TextStyle(
-                    color: Colors.tealAccent,
-                    fontSize: 30.sp,
-                    fontFamily: GoogleFonts.dmSerifText().fontFamily,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],
             ),
@@ -50,13 +42,9 @@ class PartThree extends StatelessWidget {
                 spacing: 20.h,
                 children: [
                   Text(
-                    "Lets Talk",
+                    "Feel Free To Drop me your details if you have any exciting opportunity",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 30.sp,
-                      fontFamily: GoogleFonts.dmSerifText().fontFamily,
-                    ),
+                    style: Theme.of(context).textTheme.bodyLarge
                   ),
                   SizedBox(height: 20.h,),
                   TextField(
@@ -93,10 +81,11 @@ class PartThree extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 50.h),
                     child: ElevatedButton(
+                      style: Theme.of(context).elevatedButtonTheme.style,
                       onPressed: () {
                         // Handle button press
                       },
-                      child: const Text('Let\'s Talk'),
+                      child: const Text('Let\'s Talk',style: TextStyle(decoration: TextDecoration.none),),
                     ),
                   ),
                 ],
