@@ -42,8 +42,8 @@ class HomePageNormal extends StatelessWidget {
                 ),
               ),
               actions: [
-                Padding(
-                  padding: EdgeInsets.only(right: 16.w),
+                Container(
+                  margin: EdgeInsets.only(right: 16.w),
                   child: OutlinedButton.icon(
                     onPressed: () => openDriveLink(
                       "https://drive.google.com/file/d/1EnGQCEkpm7k4mxh9ulwC6qQuX4fFzfVn/view",
@@ -57,6 +57,7 @@ class HomePageNormal extends StatelessWidget {
                       style: TextStyle(
                         decoration: TextDecoration.none,
                         color: Theme.of(context).cardColor,
+                        fontSize: 30.sp
                       ),
                     ),
                     style: Theme.of(context).outlinedButtonTheme.style,

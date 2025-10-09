@@ -47,7 +47,7 @@ class PartTwo extends StatelessWidget {
                 iconAlignment: MarkerIconAlignment.top,
                 icon: checkIcon,
                 child: SizedBox(
-                  width: 1400.w,
+                  width: 1390.w,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -92,7 +92,7 @@ class PartTwo extends StatelessWidget {
               Marker(
                 iconAlignment: MarkerIconAlignment.top,
                 child: SizedBox(
-                  width: 1400.w,
+                  width: 1390.w,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -119,7 +119,7 @@ class PartTwo extends StatelessWidget {
               Marker(
                 iconAlignment: MarkerIconAlignment.top,
                 child: SizedBox(
-                  width: 1400.w,
+                  width: 1390.w,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
