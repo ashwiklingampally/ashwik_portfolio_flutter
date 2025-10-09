@@ -53,7 +53,7 @@ class HomePageNormal extends StatelessWidget {
                       color: Theme.of(context).cardColor,
                     ),
                     label: Text(
-                      "Download Resume",
+                      "Resume",
                       style: TextStyle(
                         decoration: TextDecoration.none,
                         color: Theme.of(context).cardColor,
