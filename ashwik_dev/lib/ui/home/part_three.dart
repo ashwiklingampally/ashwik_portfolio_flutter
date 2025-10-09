@@ -35,15 +35,16 @@ class PartThree extends StatelessWidget {
         ),
         Wrap(
           direction: Axis.horizontal,
+          alignment: WrapAlignment.spaceBetween,
           children: [
             Container(
               alignment: Alignment.center,
               width: 650.h,
-              child: Image.asset('images/contact_us.png'),
+              child: Image.asset('assets/images/contact_us.png'),
             ),
             Container(
               padding: EdgeInsets.all(50.h),
-              width: 1200.h,
+              width: 700.h,
               // decoration: BoxDecoration(
               //   border: Border.all(color: Colors.black, width: 2.0),
               //   borderRadius: BorderRadius.all(Radius.circular(5.h)),

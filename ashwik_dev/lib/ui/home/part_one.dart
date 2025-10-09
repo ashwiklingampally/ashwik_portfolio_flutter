@@ -49,7 +49,7 @@ class PartOne extends StatelessWidget {
             shape: BoxShape.circle,
             // color: Color(0x2F333732),
           ),
-          child: Image.asset('images/updated_ashwik_avatar_removebg.png'),
+          child: Image.asset('assets/images/updated_ashwik_avatar_removebg.png'),
         ),
       ],
     );
