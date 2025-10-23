@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         builder: (context, state) => const HomePageNormal(),
         routes: [
           GoRoute(path: 'home', builder: (context, state) => const HomePageNormal()),
-          GoRoute(path: 'test', builder: (context, state) => const HomePageNormal()),
+          GoRoute(path: 'test', builder: (context, state) => const Test()),
 
         ],
       ),
