@@ -1,6 +1,7 @@
 import 'package:ashwik_dev/theme/bloc/theme_cubit.dart';
 import 'package:ashwik_dev/theme/theme.dart';
 import 'package:ashwik_dev/ui/home/homepage_normal.dart';
+import 'package:ashwik_dev/ui/test/test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -20,9 +21,11 @@ class MyApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const HomePageNormal(),
+        builder: (context, state) => const Test(),
         routes: [
           GoRoute(path: 'home', builder: (context, state) => const HomePageNormal()),
+          GoRoute(path: 'test', builder: (context, state) => const Test()),
+
         ],
       ),
     ],
